@@ -11,10 +11,19 @@ describe("Add", () => {
 })
 
 describe("Substract", () => {
-  it("Should substract two numbers together", () => {
+  it("Should substract first number by second number", () => {
     // eg. substract(10, 6) should equal 4
     const c = new Calculator
     assert.equal(4, c.substract(10, 6));
     assert.equal(3, c.substract(9, 6));
+  })
+})
+
+describe("Division", () => {
+  it("Should divide first number by second number ", () => {
+    // eg. substract(10, 6) should equal 4
+    const c = new Calculator
+    assert.equal(2, c.divide(10, 5));
+    assert.equal((9 / 6), c.divide(9, 6));
   })
 })
