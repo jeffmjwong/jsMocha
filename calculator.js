@@ -1,9 +1,11 @@
 class Calculator {
-  add(a, b) {
-    return a + b;
+  add(...args) {
+    let answer = 0;
+    args.forEach(num => answer += num);
+    return answer;
   }
 
-  substract(a, b) {
+  subtract(a, b) {
     return a - b;
   }
 
